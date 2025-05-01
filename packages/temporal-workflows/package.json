@@ -1,0 +1,30 @@
+{
+  "name": "temporal-workflows",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "lib/activities",
+    "lib/workflows"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "build.watch": "tsc --build -w --preserveWatchOutput",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2",
+    "@temporalio/activity": "^1.11.6",
+    "@temporalio/workflow": "^1.11.6",
+    "openai": "^4.96.2",
+    "xstate": "^5.19.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.4",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-deprecation": "^3.0.0",
+    "typescript": "^5.6.3"
+  }
+}
