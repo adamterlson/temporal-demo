@@ -48,10 +48,11 @@ export async function crawler(input: { mission: string }): Promise<string> {
       },
       strict: false,
     }));
+    console.log("TOOLS RESP", tools[0]);
     const response = await reason({ messages, tools });
     const content = response.output[0];
-
     if (content.type === "function_call") {
+      console.log("FUNCTION CALL", JSON.stringify(content, null, 2));
       messages.push({
         type: content.type,
         name: content.name,

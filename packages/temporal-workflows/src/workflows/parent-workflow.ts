@@ -22,7 +22,7 @@ const myMachine = setup({
         args: [
           {
             mission:
-              "Crawl https://github.com/temporalio/samples-typescript/blob/main/child-workflows/src/workflows.ts and report what you find",
+              "Crawl https://github.com/temporalio/samples-typescript/ and report what you find",
           },
         ],
       });

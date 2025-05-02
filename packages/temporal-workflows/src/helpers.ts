@@ -20,9 +20,7 @@ export function convertOpenAIToolToMCP(
     method: "tools/call",
     params: {
       name: tool.name,
-      arguments: {
-        input: JSON.parse(tool.arguments),
-      },
+      arguments: JSON.parse(tool.arguments),
     },
   };
 }
